@@ -1,0 +1,16 @@
+[project]
+name = "robocon-library-workshop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "robotframework>=7.4.1",
+    "robotframework-pythonlibcore>=4.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.1",
+    "ruff>=0.15.0",
+]

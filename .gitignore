@@ -154,6 +154,7 @@ profile_default/
 site/
 _work/
 .vscode/
-.pptx
+*.pptx
 results/
+.python-version
 
