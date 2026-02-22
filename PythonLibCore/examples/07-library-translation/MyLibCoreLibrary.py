@@ -5,13 +5,8 @@ from pathlib import Path
 
 class MyLibCoreLibrary(DynamicCore):
     def __init__(self, translation: Path):
-        super().__init__(
-            [],
-            translation=translation.absolute()
-        )
+        super().__init__([], translation=translation.absolute())
 
     @keyword
     def my_keyword(self):
         logger.info("Executing my_keyword...")
-
-
