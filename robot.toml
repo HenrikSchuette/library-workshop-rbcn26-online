@@ -1,0 +1,3 @@
+extend-python-path = [
+    "PythonLibCore/examples/todo_app/src"
+]
