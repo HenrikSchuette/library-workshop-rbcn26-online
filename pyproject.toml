@@ -15,5 +15,6 @@ dependencies = [
 [dependency-groups]
 dev = [
     "mypy>=1.19.1",
+    "robotframework-robocop>=8.2.0",
     "ruff>=0.15.0",
 ]
