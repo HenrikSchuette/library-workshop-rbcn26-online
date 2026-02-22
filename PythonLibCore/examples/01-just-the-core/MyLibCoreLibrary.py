@@ -7,5 +7,5 @@ class MyLibCoreLibrary(DynamicCore):
 
     @keyword
     def my_keyword(self):
-        """An awesome keyword that does something great."""
-        return "I am a property of MyLibCoreLibrary"
+        """An awesome keyword."""
+        return "some result"

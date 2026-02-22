@@ -12,9 +12,6 @@ class BaseLibraryComponent:
 
 
 class LibraryComponent(BaseLibraryComponent):
-    def __init__(self, library: LibInstance | None = None):
-        super().__init__(library)
-
     @keyword
     def library_component_keyword(self):
         return self.library.library_property
