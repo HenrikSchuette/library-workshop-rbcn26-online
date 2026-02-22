@@ -167,7 +167,7 @@ wheels = [
 
 [[package]]
 name = "fastapi"
-version = "0.129.2"
+version = "0.131.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "annotated-doc" },
@@ -176,9 +176,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "typing-inspection" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/fd/cc/1b0d90ed759ff8c9dbc4800de7475d4e9256a81b97b45bd05a1affcb350a/fastapi-0.129.2.tar.gz", hash = "sha256:e2b3637a2b47856e704dbd9a3a09393f6df48e8b9cb6c7a3e26ba44d2053f9ab", size = 368211, upload-time = "2026-02-21T17:25:49.198Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/91/32/158cbf685b7d5a26f87131069da286bf10fc9fbf7fc968d169d48a45d689/fastapi-0.131.0.tar.gz", hash = "sha256:6531155e52bee2899a932c746c9a8250f210e3c3303a5f7b9f8a808bfe0548ff", size = 369612, upload-time = "2026-02-22T16:38:11.252Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/18/d0/a89a640308016c7fff8d2a47b86cc03ee7cca780b5079d0b69f466f9e1a9/fastapi-0.129.2-py3-none-any.whl", hash = "sha256:e21d9f6e8db376655187905ad0145edd6f6a4e5f2bff241c4efb8a0bffd6a540", size = 103227, upload-time = "2026-02-21T17:25:47.745Z" },
+    { url = "https://files.pythonhosted.org/packages/ff/94/b58ec24c321acc2ad1327f69b033cadc005e0f26df9a73828c9e9c7db7ce/fastapi-0.131.0-py3-none-any.whl", hash = "sha256:ed0e53decccf4459de78837ce1b867cd04fa9ce4579497b842579755d20b405a", size = 103854, upload-time = "2026-02-22T16:38:09.814Z" },
 ]
 
 [[package]]
@@ -738,7 +738,7 @@ requires-dist = [
     { name = "requests", specifier = ">=2.32.5" },
     { name = "robotframework", specifier = ">=7.4.1" },
     { name = "robotframework-pythonlibcore", specifier = ">=4.5.0" },
-    { name = "todo-rest", specifier = ">=0.1.5" },
+    { name = "todo-rest", specifier = ">=0.2.0" },
 ]
 
 [package.metadata.requires-dev]
@@ -837,15 +837,15 @@ wheels = [
 
 [[package]]
 name = "todo-rest"
-version = "0.1.5"
+version = "0.2.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "fastapi" },
     { name = "uvicorn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/70/b8/d92887ac12c691180cab031f72f94799968b6cc8f0d7e19447d289846935/todo_rest-0.1.5.tar.gz", hash = "sha256:79324472e3ac7341f36b9cec63a74a9115059aafcd7dafa8d49164ac2adc2f36", size = 11988, upload-time = "2026-02-22T10:29:02.702Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/c4/9e/5af1a72d40bb8d752ba31003abc708f9f9f1b90f2278dd44a34a8ed84b42/todo_rest-0.2.0.tar.gz", hash = "sha256:08a7627f6f1b34b0e219102108c1d4b057f4b2f30bd21bdb13dbb50b2cc22242", size = 21459, upload-time = "2026-02-22T21:09:22.817Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/4b/b9/80599be6f6b648bd1bc906ceed06173b818d14324a9bf201f99528217647/todo_rest-0.1.5-py3-none-any.whl", hash = "sha256:22702dda247a773fb7e74aa5c79c2e6cb7403cba27fd2f5ef50a28d718f37fec", size = 5777, upload-time = "2026-02-22T10:29:01.659Z" },
+    { url = "https://files.pythonhosted.org/packages/58/5e/da015d36f39024ba2d44c43236adb5c0313a72c92287d8fa084a322f4ed4/todo_rest-0.2.0-py3-none-any.whl", hash = "sha256:e783647ba48e3926f03257241ff243426e03260860c18f04964350e15d6b2812", size = 6192, upload-time = "2026-02-22T21:09:23.666Z" },
 ]
 
 [[package]]
