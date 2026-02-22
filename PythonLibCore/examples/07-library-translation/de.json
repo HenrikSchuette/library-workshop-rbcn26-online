@@ -1,0 +1,14 @@
+{
+    "my_keyword": {
+        "name": "mein_keyword",
+        "doc": "Das ist die neue Dokumentation für Mein Keyword."
+    },
+    "__init__": {
+        "name": "__init__",
+        "doc": "Ersetzt die __init__ Dokumentation mit dieser hier."
+    },
+    "__intro__": {
+        "name": "__intro__",
+        "doc": "Neue __intro__ Dokumentation ist hier."
+    }
+}

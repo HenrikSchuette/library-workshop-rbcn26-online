@@ -1,0 +1,2 @@
+- keyword names and documentation can be translated but not the arguments
+- translation are provided as json. The path to the json is needed as pathlib Path object. It is usually passed as Library argument.

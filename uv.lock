@@ -723,7 +723,6 @@ dependencies = [
     { name = "requests" },
     { name = "robotframework" },
     { name = "robotframework-pythonlibcore" },
-    { name = "robotframework-robocop" },
     { name = "todo-rest" },
 ]
 
@@ -739,14 +738,13 @@ requires-dist = [
     { name = "requests", specifier = ">=2.32.5" },
     { name = "robotframework", specifier = ">=7.4.1" },
     { name = "robotframework-pythonlibcore", specifier = ">=4.5.0" },
-    { name = "robotframework-robocop", specifier = ">=8.2.0" },
     { name = "todo-rest", specifier = ">=0.1.5" },
 ]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "mypy", specifier = ">=1.19.1" },
-    { name = "robotframework-robocop", specifier = ">=8.2.0" },
+    { name = "robotframework-robocop", specifier = "==8.2.0" },
     { name = "ruff", specifier = ">=0.15.0" },
 ]
 

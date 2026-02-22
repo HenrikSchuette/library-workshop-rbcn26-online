@@ -8,7 +8,6 @@ dependencies = [
     "requests>=2.32.5",
     "robotframework>=7.4.1",
     "robotframework-pythonlibcore>=4.5.0",
-    "robotframework-robocop>=8.2.0",
     "todo-rest>=0.1.5",
 ]
 
