@@ -1,6 +1,7 @@
 from robotlibcore import DynamicCore
 import requests
 
+from robot.api.deco import library
 from robot.api.interfaces import (
     Arguments,
 )
@@ -8,6 +9,7 @@ from .models.openapi_rf_keyword_model import parse_openapi_spec
 from .openapi_keyword_runner import OpenAPIKeywordRunner
 
 
+@library
 class OpenApiLibrary(DynamicCore):
     def __init__(self, base_url="http://localhost:8000"):
         super().__init__([])
