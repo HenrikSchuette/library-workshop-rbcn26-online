@@ -120,7 +120,7 @@ class PathItem:
 class Components:
     """OpenAPI Components Object."""
 
-    schemas: Optional[Dict[str, Schema]] = None
+    schemas: Dict[str, Schema]
     responses: Optional[Dict[str, Response]] = None
     parameters: Optional[Dict[str, Parameter]] = None
     requestBodies: Optional[Dict[str, RequestBody]] = None

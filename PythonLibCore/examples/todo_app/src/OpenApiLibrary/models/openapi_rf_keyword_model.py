@@ -3,11 +3,14 @@
 
 from dataclasses import dataclass
 import re
-from typing import Any, Dict
+from typing import Any, Dict, Iterator
+
 from OpenApiLibrary.models.openapi_model import (
+    Components,
     OpenAPI,
     Operation,
     PathItem,
+    Parameter,
     parse_openapi,
 )
 
@@ -18,7 +21,7 @@ class OpenApiKeyword:
     method: str
     method_item: Operation
     path: str
-    parameters: list
+    parameters: list[Parameter]
     request_body: dict[str, dict]
 
 
@@ -41,7 +44,7 @@ def get_path_methods(path: PathItem) -> dict[str, Operation]:
 
 def get_path_method_iterator(
     open_api_model: OpenAPI,
-) -> tuple[str, PathItem, str, Operation]:  # type: ignore
+) -> Iterator[tuple[str, PathItem, str, Operation]]:
     for path_name, path_item in open_api_model.paths.items():
         if path_name == "/":
             continue
@@ -50,7 +53,9 @@ def get_path_method_iterator(
             yield path_name, path_item, method_name, method
 
 
-def get_keyword_argument_schemas(method: Operation, open_api_model: OpenAPI):
+def get_keyword_argument_schemas(
+    method: Operation, open_api_model: OpenAPI
+) -> dict[str, dict[str, Any]]:
     if (
         not method
         or not method.requestBody
@@ -61,13 +66,16 @@ def get_keyword_argument_schemas(method: Operation, open_api_model: OpenAPI):
     ):
         return {}
     ref = method.requestBody.content["application/json"].schema.ref.split("/")[-1]
-    if ref:
+    component_properties = (
+        open_api_model.components.schemas[ref].properties
+        if isinstance(open_api_model.components, Components)
+        else {}
+    )
+    if ref and isinstance(component_properties, dict):
         return {
             ref: {
                 property_name: property_schema
-                for property_name, property_schema in open_api_model.components.schemas[
-                    ref
-                ].properties.items()
+                for property_name, property_schema in component_properties.items()
             }
         }
     return {}
@@ -83,7 +91,7 @@ def parse_openapi_spec(data: Dict[str, Any]) -> dict[str, OpenApiKeyword]:
             method=method_name,
             method_item=method,
             path=path_name,
-            parameters=method.parameters,
+            parameters=method.parameters or [],
             request_body=get_keyword_argument_schemas(method, open_api_model),
         )
     return keywords

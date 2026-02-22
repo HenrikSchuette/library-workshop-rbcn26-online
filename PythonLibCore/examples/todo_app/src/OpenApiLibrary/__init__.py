@@ -1,4 +1,4 @@
-from OpenApiLibrary.dynamic_core import OpenApiLibrary
+from OpenApiLibrary.open_api_library import OpenApiLibrary
 
 
 __all__ = ["OpenApiLibrary"]
