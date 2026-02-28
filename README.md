@@ -6,8 +6,7 @@ For local development, only `uv` (https://docs.astral.sh/uv/getting-started/inst
 ## Commands
 
 - Run `uv sync` to install dependencies in pyproject.toml
-- Run `uv add package_name` to add further runtime dependencies
-- Run `uv add --dev package_name` to add dev dependencies
+
 
 
 
@@ -17,3 +16,9 @@ Run the testobject with the following command:
 ```bash
 uv run todo-api
 ```
+
+Or via uv:
+```bash
+uv run todo-api
+```
+Afterwards you can inspect the testobject (a simple todo app) at http://localhost:8000.
