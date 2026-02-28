@@ -14,7 +14,7 @@ For local development, only `uv` (https://docs.astral.sh/uv/getting-started/inst
 ## Testobject
 Run the testobject with the following command:
 ```bash
-uv run todo-api
+todo-api
 ```
 
 Or via uv:
