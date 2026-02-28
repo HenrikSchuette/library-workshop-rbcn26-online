@@ -1,0 +1,25 @@
+{
+  "name": "Robot Framework Library Workshop",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "d-biehl.robotcode"
+      ]
+    }
+  },
+  
+  "postCreateCommand": "pip install --upgrade pip && pip install -e '.[dev]'",
+  
+  "forwardPorts": [8000],
+  
+  "portsAttributes": {
+    "8000": {
+      "label": "Todo API",
+      "onAutoForward": "notify"
+    }
+  },
+  
+  "remoteUser": "vscode"
+}
