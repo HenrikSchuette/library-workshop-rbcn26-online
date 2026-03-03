@@ -155,6 +155,7 @@ site/
 _work/
 .vscode/
 *.pptx
+*_ref.py
 results/
 .python-version
 

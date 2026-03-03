@@ -1,0 +1,28 @@
+# Placeholder pyproject: configure your build system, metadata, and tooling here.
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini_cart"
+version = "0.1.0"
+description = "Short description for mini-cart."
+authors = []  # TODO: add authors
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = []  # TODO: add runtime dependencies
+
+# Placeholder Ruff configuration: adjust rules and settings for linting/formatting.
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]  # Example: basic pycodestyle & import rules
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
