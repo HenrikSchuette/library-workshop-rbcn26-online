@@ -1,0 +1,19 @@
+{
+    
+    "__init__": {
+        "name": "__init__",
+        "doc": "Ersetzt die __init__ Dokumentation mit dieser hier."
+    },
+    "__intro__": {
+        "name": "__intro__",
+        "doc": "Neue __intro__ Dokumentation ist hier."
+    },
+    "delete_all_todos": {
+        "name": "alle_todos_löschen",
+        "doc": "Löscht alle Todos."
+    },
+    "create_todo": {
+        "name": "erstelle_todo",
+        "doc": "Erstellt ein neues Todo."
+    }
+}

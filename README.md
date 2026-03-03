@@ -14,11 +14,11 @@ For local development, only `uv` (https://docs.astral.sh/uv/getting-started/inst
 ## Testobject
 Run the testobject with the following command:
 ```bash
-todo-api
+todo-rest
 ```
 
 Or via uv:
 ```bash
-uv run todo-api
+uv run todo-rest
 ```
 Afterwards you can inspect the testobject (a simple todo app) at http://localhost:8000.
